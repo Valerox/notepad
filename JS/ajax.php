@@ -5,9 +5,8 @@ if(isset($_POST['value'])){
 
     $conx=mysqli_connect("212.227.181.253","dev", "password", "notepad");
 
-    $sql="INSERT INTO notepad.note (VALUE,CREATED) VALUES('$value', '$created');"
+    $sql="INSERT INTO notepad.note (VALUE,CREATED) VALUES('$value', '$created')";
 
     $result=mysqli_query($conx,$sql);
 }
-
 ?>
